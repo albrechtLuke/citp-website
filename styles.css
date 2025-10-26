@@ -75,6 +75,44 @@ body {
     opacity: 1;
 }
 
+.footer .container {
+    color: #ccc;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.footer-table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-table th,
+.footer-table td {
+  border: none;
+  padding: 0.3rem 0.8rem;
+  vertical-align: top;
+}
+
+.footer-table a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.2s;
+  display: inline-block;
+  margin-bottom: 0.2rem;
+}
+
+.footer-table a:hover {
+  color: #40520F;
+}
+
+.footer-table th a {
+  font-weight: 600;
+  color: #40520F;
+  font-size: 1rem;
+}
 
 /* MARK:- Background Bubbles
 */
