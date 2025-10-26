@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
         dismiss.setAttribute('aria-label', 'Dismiss acknowledgement');
 
         const img = document.createElement('img');
-        img.src = '/x.circle.fill.svg';
+        img.src = '/xmark.circle.fill.svg';
         img.alt = 'Close';
         dismiss.appendChild(img);
 

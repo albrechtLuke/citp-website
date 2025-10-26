@@ -27,6 +27,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -47,6 +48,7 @@ body {
     height: 100%;
     z-index: -1;
     overflow: hidden;
+    filter: blur(10px);
 }
 
 .bubble {
@@ -130,7 +132,7 @@ body {
 }
 
 .nav-logo h2 {
-    color: #485C11;
+    color: #40520F;
     font-family: 'Aileron', sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
@@ -143,7 +145,7 @@ body {
 }
 
 .nav-link {
-    color: #485C11;
+    color: #40520F;
     text-decoration: none;
     font-weight: 500;
     padding: 8px 16px;
@@ -152,7 +154,7 @@ body {
     position: relative;
 }
 .nav-link-logo {
-    color: #485C11;
+    color: #40520F;
     text-decoration: none;
     font-weight: 500;
     padding: 8px 16px;
@@ -163,8 +165,8 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-    background: rgba(142, 156, 120, 0.2);
-    color: #485C11;
+    background: rgba(142, 156, 120, 0.497);
+    color: #40520F;
 }
 
 .hamburger {
@@ -193,6 +195,7 @@ body {
 .hero {
     padding: 100px 0;
     text-align: center;
+    text-wrap: balance;
     background: rgba(243, 236, 225, 0.5);
     border-bottom: 1px solid rgba(142, 156, 120, 0.2);
 }
@@ -207,13 +210,13 @@ body {
     font-family: 'Aileron', sans-serif;
     font-size: 3.5rem;
     font-weight: 700;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 20px;
 }
 
 .hero-subtitle {
     font-size: 1.3rem;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 40px;
     line-height: 1.6;
 }
@@ -239,7 +242,7 @@ body {
 }
 
 .btn-primary {
-    background: #485C11;
+    background: #40520F;
     color: white;
     box-shadow: 0 4px 15px rgba(72, 92, 17, 0.3);
 }
@@ -252,7 +255,7 @@ body {
 
 .btn-secondary {
     background: rgba(142, 156, 120, 0.2);
-    color: #485C11;
+    color: #40520F;
     border: 1px solid rgba(142, 156, 120, 0.3);
 }
 
@@ -279,7 +282,7 @@ section {
     font-family: 'Aileron', sans-serif;
     font-size: 2.5rem;
     font-weight: 600;
-    color: #485C11;
+    color: #40520F;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -294,6 +297,8 @@ section {
     padding: 30px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    display: block;
+   
 
 
     
@@ -313,7 +318,7 @@ section {
 .proposal-text {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #485C11;
+    color: #40520F;
     text-align: center;
     /* max-width: 800px; */
     /* margin: 0 auto; */
@@ -383,15 +388,15 @@ section {
     font-family: 'Aileron', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 15px;
     text-align: center;
 }
 
 .glass-card p {
-    color: #485C11;
+    color: #40520F;
     line-height: 1.6;
-    text-align: center;
+    text-align: justify;
 }
 
 /* MARK:- Key Considerations
@@ -405,7 +410,7 @@ section {
 
 .considerations-grid .glass-card h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     text-align: left;
     margin-bottom: 20px;
 }
@@ -416,7 +421,7 @@ section {
 }
 
 .considerations-grid li {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 10px;
     padding-left: 20px;
     position: relative;
@@ -441,7 +446,7 @@ section {
 
 .materials-grid .glass-card h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     text-align: left;
     margin-bottom: 20px;
 }
@@ -459,11 +464,11 @@ section {
 }
 
 .cost-item span:first-child {
-    color: #485C11;
+    color: #40520F;
 }
 
 .cost-item span:last-child {
-    color: #485C11;
+    color: #40520F;
     font-weight: 600;
 }
 
@@ -475,14 +480,14 @@ section {
 .total-cost {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #485C11;
+    color: #40520F;
     text-align: center;
     margin: 20px 0;
 }
 
 .cost-note {
     text-align: center;
-    color: #485C11;
+    color: #40520F;
     font-style: italic;
 }
 
@@ -493,7 +498,7 @@ section {
     border-top: 1px solid rgba(142, 156, 120, 0.3);
     padding: 30px 0;
     text-align: center;
-    color: #485C11;
+    color: #40520F;
 }
 
 /* MARK:- Problem Page Styles
@@ -518,12 +523,12 @@ section {
     font-family: 'Aileron', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 15px;
 }
 
 .challenge-card p {
-    color: #485C11;
+    color: #40520F;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -535,7 +540,7 @@ section {
 }
 
 .challenge-details li {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 8px;
     padding-left: 20px;
     position: relative;
@@ -559,11 +564,11 @@ section {
     font-family: 'Aileron', sans-serif;
     text-align: left;
     margin-bottom: 15px;
-    color: #485C11;
+    color: #40520F;
 }
 
 .impact-grid .glass-card p {
-    color: #485C11;
+    color: #40520F;
     line-height: 1.6;
 }
 
@@ -575,12 +580,12 @@ section {
 
 .solution-card h2 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 20px;
 }
 
 .solution-card p {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 30px;
     font-size: 1.1rem;
     line-height: 1.6;
@@ -608,12 +613,12 @@ section {
     font-family: 'Aileron', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 15px;
 }
 
 .feature-card p {
-    color: #485C11;
+    color: #40520F;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -625,7 +630,7 @@ section {
 }
 
 .feature-benefits li {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 8px;
     padding-left: 20px;
     position: relative;
@@ -650,7 +655,7 @@ section {
     font-family: 'Aileron', sans-serif;
     text-align: left;
     margin-bottom: 20px;
-    color: #485C11;
+    color: #40520F;
 }
 
 .tech-details {
@@ -667,12 +672,12 @@ section {
 
 .tech-label {
     font-weight: 600;
-    color: #485C11;
+    color: #40520F;
     font-size: 0.9rem;
 }
 
 .tech-value {
-    color: #485C11;
+    color: #40520F;
     font-size: 0.9rem;
 }
 
@@ -689,13 +694,13 @@ section {
 
 .advantage-card h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 15px;
     font-size: 1.3rem;
 }
 
 .advantage-card p {
-    color: #485C11;
+    color: #40520F;
     line-height: 1.6;
 }
 
@@ -707,12 +712,12 @@ section {
 
 .next-steps-card h2 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 20px;
 }
 
 .next-steps-card p {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 30px;
     font-size: 1.1rem;
     line-height: 1.6;
@@ -743,7 +748,7 @@ section {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #485C11;
+    background: #40520F;
     color: white;
     display: flex;
     align-items: center;
@@ -755,7 +760,7 @@ section {
 
 .phase-card h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 10px;
     font-size: 1.3rem;
 }
@@ -774,7 +779,7 @@ section {
 }
 
 .phase-tasks li {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 8px;
     padding-left: 20px;
     position: relative;
@@ -797,7 +802,7 @@ section {
 
 .spec-card h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -815,12 +820,12 @@ section {
 }
 
 .spec-label {
-    color: #485C11;
+    color: #40520F;
     font-weight: 500;
 }
 
 .spec-value {
-    color: #485C11;
+    color: #40520F;
     font-weight: 600;
 }
 
@@ -833,7 +838,7 @@ section {
 
 .considerations-grid .glass-card h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 15px;
 }
 
@@ -843,7 +848,7 @@ section {
 }
 
 .consideration-list li {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 10px;
     padding-left: 20px;
     position: relative;
@@ -866,12 +871,12 @@ section {
 
 .qa-grid .glass-card h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 15px;
 }
 
 .qa-grid .glass-card p {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 15px;
     line-height: 1.6;
 }
@@ -882,7 +887,7 @@ section {
 }
 
 .qa-list li {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 8px;
     padding-left: 20px;
     position: relative;
@@ -917,19 +922,19 @@ section {
 .metric-value {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 10px;
 }
 
 .metric-label {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 10px;
 }
 
 .metric-card p {
-    color: #485C11;
+    color: #40520F;
     font-size: 0.9rem;
     line-height: 1.4;
 }
@@ -952,7 +957,7 @@ section {
 
 .sector-card h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 20px;
     font-size: 1.3rem;
 }
@@ -964,7 +969,7 @@ section {
 }
 
 .sector-benefits li {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 8px;
     padding-left: 20px;
     position: relative;
@@ -987,7 +992,7 @@ section {
 
 .environmental-grid .glass-card h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 15px;
 }
 
@@ -997,7 +1002,7 @@ section {
 }
 
 .environmental-list li {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 8px;
     padding-left: 20px;
     position: relative;
@@ -1019,7 +1024,7 @@ section {
 
 .case-study h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 15px;
 }
 
@@ -1042,7 +1047,7 @@ section {
 }
 
 .case-benefits li {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 5px;
     padding-left: 15px;
     position: relative;
@@ -1064,12 +1069,12 @@ section {
 
 .vision-grid .glass-card h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 15px;
 }
 
 .vision-grid .glass-card p {
-    color: #485C11;
+    color: #40520F;
     line-height: 1.6;
 }
 
@@ -1084,7 +1089,7 @@ section {
 
 .reference-card h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -1104,18 +1109,18 @@ section {
 
 .ref-authors {
     font-weight: 600;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 5px;
 }
 
 .ref-title {
     font-style: italic;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 5px;
 }
 
 .ref-journal {
-    color: #485C11;
+    color: #40520F;
     font-size: 0.9rem;
     margin-bottom: 3px;
 }
@@ -1135,7 +1140,7 @@ section {
 
 .standard-card h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -1146,7 +1151,7 @@ section {
 }
 
 .standard-list li {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 10px;
     padding-left: 20px;
     position: relative;
@@ -1170,7 +1175,7 @@ section {
 
 .report-card h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -1184,12 +1189,12 @@ section {
 
 .report-title {
     font-weight: 600;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 5px;
 }
 
 .report-source {
-    color: #485C11;
+    color: #40520F;
     font-size: 0.9rem;
     margin-bottom: 5px;
 }
@@ -1209,7 +1214,7 @@ section {
 
 .data-sources-grid .glass-card h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -1220,7 +1225,7 @@ section {
 }
 
 .data-list li {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 10px;
     padding-left: 20px;
     position: relative;
@@ -1242,7 +1247,7 @@ section {
 
 .resources-grid .glass-card h3 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -1253,7 +1258,7 @@ section {
 }
 
 .resource-list li {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 8px;
     padding-left: 20px;
     position: relative;
@@ -1274,12 +1279,12 @@ section {
 
 .contact-card h2 {
     font-family: 'Aileron', sans-serif;
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 20px;
 }
 
 .contact-card p {
-    color: #485C11;
+    color: #40520F;
     margin-bottom: 30px;
     line-height: 1.6;
 }
@@ -1294,7 +1299,7 @@ section {
 }
 
 .contact-item {
-    color: #485C11;
+    color: #40520F;
     padding: 10px;
     background: rgba(243, 236, 225, 0.3);
     border-radius: 8px;
@@ -1318,12 +1323,12 @@ section {
 .cost-table th {
     font-family: 'Aileron', sans-serif;
     font-weight: 600;
-    color: #485C11;
+    color: #40520F;
     background: rgba(142, 156, 120, 0.1);
 }
 
 .cost-table td {
-    color: #485C11;
+    color: #40520F;
 }
 
 .cost-table .total-row {
