@@ -1,0 +1,1492 @@
+/* MARK:- Font Face Declarations
+*/
+@font-face {
+    font-family: 'Aileron';
+    src: url('aileron/Aileron-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('aileron/Aileron-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('aileron/Aileron-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* MARK:- Reset and Base Styles
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background: #F3ECE1;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* MARK:- Background Bubbles
+*/
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(142, 156, 120, 0.1);
+    border: 1px solid rgba(142, 156, 120, 0.2);
+    animation: float 6s ease-in-out infinite;
+}
+
+.bubble-1 {
+    width: 80px;
+    height: 80px;
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.bubble-2 {
+    width: 120px;
+    height: 120px;
+    top: 60%;
+    right: 15%;
+    animation-delay: 2s;
+}
+
+.bubble-3 {
+    width: 60px;
+    height: 60px;
+    top: 80%;
+    left: 20%;
+    animation-delay: 4s;
+}
+
+.bubble-4 {
+    width: 100px;
+    height: 100px;
+    top: 30%;
+    right: 30%;
+    animation-delay: 1s;
+}
+
+.bubble-5 {
+    width: 140px;
+    height: 140px;
+    top: 70%;
+    left: 60%;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+}
+
+/* MARK:- Navigation
+*/
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(243, 236, 225, 0.9);
+    border-bottom: 1px solid rgba(142, 156, 120, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    backdrop-filter: blur(20px);
+}
+
+.nav-logo h2 {
+    color: #485C11;
+    font-family: 'Aileron', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #485C11;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.nav-link-logo {
+    color: #485C11;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: rgba(142, 156, 120, 0.2);
+    color: #485C11;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: #4a5568;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* MARK:- Main Content
+*/
+.main-content {
+    margin-top: 70px;
+    padding: 0;
+}
+
+/* MARK:- Hero Section
+*/
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    background: rgba(243, 236, 225, 0.5);
+    border-bottom: 1px solid rgba(142, 156, 120, 0.2);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-family: 'Aileron', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #485C11;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: #485C11;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* MARK:- Buttons
+*/
+.btn {
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #485C11;
+    color: white;
+    box-shadow: 0 4px 15px rgba(72, 92, 17, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(72, 92, 17, 0.4);
+    background: #8E9C78;
+}
+
+.btn-secondary {
+    background: rgba(142, 156, 120, 0.2);
+    color: #485C11;
+    border: 1px solid rgba(142, 156, 120, 0.3);
+}
+
+.btn-secondary:hover {
+    background: rgba(142, 156, 120, 0.3);
+    transform: translateY(-2px);
+}
+
+/* MARK:- Container
+*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* MARK:- Sections
+*/
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-family: 'Aileron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #485C11;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* MARK:- Glass Cards
+*/
+.glass-card {
+    background: rgba(243, 236, 225, 0.8);
+    border: 1px solid rgba(142, 156, 120, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+
+    
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* MARK:- Proposal Section
+*/
+.proposal-section {
+    background: rgba(243, 236, 225, 0.3);
+}
+
+.proposal-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #485C11;
+    text-align: center;
+    /* max-width: 800px; */
+    /* margin: 0 auto; */
+}
+
+
+/* MARK:- Design Overview 
+*/
+
+
+.cards-grid {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    align-items: stretch;
+    margin-top: 50px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* MARK:- Responsive card size
+*/
+@media (min-width: 1400px) {
+    .cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+    .design-overview .container {
+        max-width: 2000px;
+    
+        padding-left: 5rem;
+        padding-right: 5rem;
+      }
+}
+
+@media (max-width: 1399px) and (min-width: 1200px) {
+    .cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 900px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 899px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #8E9C78;
+}
+
+.glass-card h3 {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #485C11;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.glass-card p {
+    color: #485C11;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* MARK:- Key Considerations
+*/
+.considerations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.considerations-grid .glass-card h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.considerations-grid ul {
+    list-style: none;
+    padding: 0;
+}
+
+.considerations-grid li {
+    color: #485C11;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.considerations-grid li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8E9C78;
+    font-weight: bold;
+}
+
+/* MARK:- Materials & Cost
+*/
+.materials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.materials-grid .glass-card h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.cost-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(142, 156, 120, 0.2);
+}
+
+.cost-item:last-child {
+    border-bottom: none;
+}
+
+.cost-item span:first-child {
+    color: #485C11;
+}
+
+.cost-item span:last-child {
+    color: #485C11;
+    font-weight: 600;
+}
+
+.total-card {
+    background: rgba(142, 156, 120, 0.1);
+    border: 1px solid rgba(142, 156, 120, 0.3);
+}
+
+.total-cost {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #485C11;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cost-note {
+    text-align: center;
+    color: #485C11;
+    font-style: italic;
+}
+
+/* MARK:- Footer
+*/
+.footer {
+    background: rgba(243, 236, 225, 0.8);
+    border-top: 1px solid rgba(142, 156, 120, 0.3);
+    padding: 30px 0;
+    text-align: center;
+    color: #485C11;
+}
+
+/* MARK:- Problem Page Styles
+*/
+.challenges-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.challenge-card {
+    text-align: center;
+}
+
+.challenge-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.challenge-card h3 {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #485C11;
+    margin-bottom: 15px;
+}
+
+.challenge-card p {
+    color: #485C11;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.challenge-details {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.challenge-details li {
+    color: #485C11;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.challenge-details li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8E9C78;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.impact-grid .glass-card h3 {
+    font-family: 'Aileron', sans-serif;
+    text-align: left;
+    margin-bottom: 15px;
+    color: #485C11;
+}
+
+.impact-grid .glass-card p {
+    color: #485C11;
+    line-height: 1.6;
+}
+
+.solution-card {
+    text-align: center;
+    background: rgba(142, 156, 120, 0.1);
+    border: 1px solid rgba(142, 156, 120, 0.3);
+}
+
+.solution-card h2 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 20px;
+}
+
+.solution-card p {
+    color: #485C11;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* MARK:- Solution Page Styles
+*/
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.feature-card {
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #485C11;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #485C11;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.feature-benefits {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.feature-benefits li {
+    color: #485C11;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.feature-benefits li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8E9C78;
+    font-weight: bold;
+}
+
+.architecture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.architecture-grid .glass-card h3 {
+    font-family: 'Aileron', sans-serif;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #485C11;
+}
+
+.tech-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tech-label {
+    font-weight: 600;
+    color: #485C11;
+    font-size: 0.9rem;
+}
+
+.tech-value {
+    color: #485C11;
+    font-size: 0.9rem;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.advantage-card {
+    text-align: center;
+}
+
+.advantage-card h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.advantage-card p {
+    color: #485C11;
+    line-height: 1.6;
+}
+
+.next-steps-card {
+    text-align: center;
+    background: rgba(142, 156, 120, 0.1);
+    border: 1px solid rgba(142, 156, 120, 0.3);
+}
+
+.next-steps-card h2 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 20px;
+}
+
+.next-steps-card p {
+    color: #485C11;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.next-steps-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* MARK:- Implementation Page Styles
+*/
+.phases-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.phase-card {
+    position: relative;
+    text-align: center;
+}
+
+.phase-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #485C11;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.phase-card h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.phase-duration {
+    color: #8E9C78;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.phase-tasks {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.phase-tasks li {
+    color: #485C11;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.phase-tasks li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8E9C78;
+    font-weight: bold;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.spec-card h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(142, 156, 120, 0.2);
+}
+
+.spec-item:last-child {
+    border-bottom: none;
+}
+
+.spec-label {
+    color: #485C11;
+    font-weight: 500;
+}
+
+.spec-value {
+    color: #485C11;
+    font-weight: 600;
+}
+
+.considerations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.considerations-grid .glass-card h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 15px;
+}
+
+.consideration-list {
+    list-style: none;
+    padding: 0;
+}
+
+.consideration-list li {
+    color: #485C11;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.consideration-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #8E9C78;
+    font-weight: bold;
+}
+
+.qa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.qa-grid .glass-card h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 15px;
+}
+
+.qa-grid .glass-card p {
+    color: #485C11;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.qa-list {
+    list-style: none;
+    padding: 0;
+}
+
+.qa-list li {
+    color: #485C11;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.qa-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8E9C78;
+    font-weight: bold;
+}
+
+/* MARK:- Impact Page Styles
+*/
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.metric-card {
+    text-align: center;
+}
+
+.metric-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #485C11;
+    margin-bottom: 10px;
+}
+
+.metric-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #485C11;
+    margin-bottom: 10px;
+}
+
+.metric-card p {
+    color: #485C11;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.sectors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.sector-card {
+    text-align: center;
+}
+
+.sector-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.sector-card h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.sector-benefits {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.sector-benefits li {
+    color: #485C11;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.sector-benefits li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8E9C78;
+    font-weight: bold;
+}
+
+.environmental-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.environmental-grid .glass-card h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 15px;
+}
+
+.environmental-list {
+    list-style: none;
+    padding: 0;
+}
+
+.environmental-list li {
+    color: #485C11;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.environmental-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8E9C78;
+}
+
+.case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.case-study h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 15px;
+}
+
+.case-scenario {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgba(142, 156, 120, 0.1);
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.case-benefits {
+    font-size: 0.9rem;
+}
+
+.case-benefits ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.case-benefits li {
+    color: #485C11;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.case-benefits li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8E9C78;
+}
+
+.vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.vision-grid .glass-card h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 15px;
+}
+
+.vision-grid .glass-card p {
+    color: #485C11;
+    line-height: 1.6;
+}
+
+/* MARK:- References Page Styles
+*/
+.references-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.reference-card h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reference-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reference-item {
+    padding: 15px;
+    background: rgba(243, 236, 225, 0.3);
+    border-radius: 8px;
+    border-left: 3px solid #8E9C78;
+}
+
+.ref-authors {
+    font-weight: 600;
+    color: #485C11;
+    margin-bottom: 5px;
+}
+
+.ref-title {
+    font-style: italic;
+    color: #485C11;
+    margin-bottom: 5px;
+}
+
+.ref-journal {
+    color: #485C11;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+}
+
+.ref-doi {
+    color: #8E9C78;
+    font-size: 0.8rem;
+    font-family: monospace;
+}
+
+.standards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.standard-card h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.standard-list {
+    list-style: none;
+    padding: 0;
+}
+
+.standard-list li {
+    color: #485C11;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.standard-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8E9C78;
+}
+
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.report-card h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.report-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(243, 236, 225, 0.3);
+    border-radius: 8px;
+}
+
+.report-title {
+    font-weight: 600;
+    color: #485C11;
+    margin-bottom: 5px;
+}
+
+.report-source {
+    color: #485C11;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.report-url {
+    color: #8E9C78;
+    font-size: 0.8rem;
+    font-family: monospace;
+}
+
+.data-sources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.data-sources-grid .glass-card h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.data-list {
+    list-style: none;
+    padding: 0;
+}
+
+.data-list li {
+    color: #485C11;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.data-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8E9C78;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.resources-grid .glass-card h3 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    color: #485C11;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.resource-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8E9C78;
+}
+
+.contact-card {
+    text-align: center;
+    background: rgba(142, 156, 120, 0.1);
+    border: 1px solid rgba(142, 156, 120, 0.3);
+}
+
+.contact-card h2 {
+    font-family: 'Aileron', sans-serif;
+    color: #485C11;
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    color: #485C11;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    color: #485C11;
+    padding: 10px;
+    background: rgba(243, 236, 225, 0.3);
+    border-radius: 8px;
+}
+
+/* MARK:- Cost Analysis Table
+*/
+.cost-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cost-table th,
+.cost-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(142, 156, 120, 0.2);
+}
+
+.cost-table th {
+    font-family: 'Aileron', sans-serif;
+    font-weight: 600;
+    color: #485C11;
+    background: rgba(142, 156, 120, 0.1);
+}
+
+.cost-table td {
+    color: #485C11;
+}
+
+.cost-table .total-row {
+    background: rgba(142, 156, 120, 0.1);
+    font-weight: 600;
+}
+
+.cost-table .total-row td {
+    font-family: 'Aileron', sans-serif;
+    font-weight: 600;
+}
+
+/* MARK:- Responsive Design
+*/
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 20px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .considerations-grid,
+    .materials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .glass-card {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+/* MARK:- Acknowledgement popup */
+.acknowledgement-popup {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    max-width: 20rem;
+    width: calc(100% - 20rem);
+    padding: 1.5rem;
+    border-radius: 2rem;
+    z-index: 2000;
+    font-size: 0.95rem;
+    color: #1f2a10;
+    background: rgba(142, 156, 120, 0.1);
+    border: 1px solid rgba(142, 156, 120, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.acknowledgement-popup.fade-out {
+    opacity: 0;
+}
+
+
+.acknowledgement-popup .ack-dismiss {
+    position: absolute;
+    top: inherit;
+    right: inherit;
+    background: none;
+    border: none;
+    margin-right: 1rem;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+}
+
+.acknowledgement-popup .ack-dismiss img {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+}
+.acknowledgement-popup .ack-placeholder {
+    float: right;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 1rem;
+    cursor: pointer;
+    width: 2rem;
+    height: 1.5rem;
+}
+
+.acknowledgement-popup .ack-text {
+    font-weight: 500;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+@media (max-width: 640px) {
+    .acknowledgement-popup {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-width: none;
+        width: 100%;
+        border-radius: 0;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
+        background: rgba(142, 156, 120, 0.1);
+        color: #1f2a10;
+        padding: 1rem;
+    }
+
+    .acknowledgement-popup .ack-text {
+        margin-top: 1rem;
+        line-height: 1.4;
+    }
+}
+
