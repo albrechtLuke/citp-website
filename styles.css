@@ -479,7 +479,8 @@ section {
 */
 .considerations-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    grid-template-columns: 1fr;
     gap: 30px;
     margin-top: 50px;
 }
@@ -682,7 +683,7 @@ section {
 
 .solution-overview-grid.large-left {
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
+    grid-template-columns: 1fr 2fr;
     gap: 40px;
     align-items: start;
 }
@@ -697,6 +698,12 @@ section {
 .solution-small-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+.solution-large-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     height: 100%;
     gap: 20px;
 }
@@ -980,38 +987,7 @@ section {
     font-weight: 600;
 }
 
-.considerations-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-}
 
-.considerations-grid .glass-card h3 {
-    font-family: 'Aileron', sans-serif;
-    color: #40520F;
-    margin-bottom: 15px;
-}
-
-.consideration-list {
-    list-style: none;
-    padding: 0;
-}
-
-.consideration-list li {
-    color: #40520F;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-}
-
-.consideration-list li::before {
-    content: "→";
-    position: absolute;
-    left: 0;
-    color: #8E9C78;
-    font-weight: bold;
-}
 
 .qa-grid {
     display: grid;
