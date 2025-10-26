@@ -971,6 +971,40 @@ section {
 
 /* MARK:- Impact Page Styles
 */
+
+.impact-grid.large-left {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+
+@media (max-width: 900px) {
+    .imapact-grid.large-left {
+        grid-template-columns: 1fr;
+    }
+
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.impact-image {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
 .metrics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
