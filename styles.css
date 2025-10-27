@@ -44,6 +44,13 @@ body {
     display: inline-block;
 }
 
+.image-wrapper-sticky {    
+    position: sticky;
+    top: 6rem; 
+    align-self: start;
+    height: fit-content;
+}
+
 .image-caption {
     position: absolute;
     bottom: 1.15rem;
@@ -657,6 +664,9 @@ section {
 }
 
 
+/* MARK:- Solution Page Styles
+*/
+
 .solution-card {
     text-align: center;
     background: rgba(142, 156, 120, 0.1);
@@ -675,11 +685,6 @@ section {
     font-size: 1.1rem;
     line-height: 1.6;
 }
-
-/* MARK:- Solution Page Styles
-*/
-
-
 
 .solution-overview-grid.large-left {
     display: grid;
@@ -743,6 +748,8 @@ section {
     gap: 30px;
     margin-top: 50px;
 }
+
+
 .solution-image {
     width: 100%;
     border-radius: 15px;
