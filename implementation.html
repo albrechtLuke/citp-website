@@ -53,18 +53,7 @@
             </div>
         </section>
 
-        <section class="implementation-overview" id="overview">
-            <div class="container">
-                <h2 class="section-title">Implementation Overview</h2>
-                <div class="glass-card">
-                    <p class="implementation-intro">
-                        Our implementation strategy focuses on modular deployment, phased rollout, and comprehensive 
-                        testing to ensure reliable operation in diverse coastal environments. The approach prioritizes 
-                        ease of installation, minimal environmental impact, and long-term sustainability.
-                    </p>
-                </div>
-            </div>
-        </section>
+
 
         <section class="phases" id="implementation-phases">
             <div class="container">
@@ -72,94 +61,38 @@
                 <div class="phases-timeline">
                     <div class="glass-card phase-card">
                         <div class="phase-number">1</div>
-                        <h3>Planning & Site Assessment</h3>
-                        <p class="phase-duration">Duration: 2-3 weeks</p>
-                        <ul class="phase-tasks">
-                            <li>Site survey and environmental assessment</li>
-                            <li>Power and connectivity evaluation</li>
-                            <li>Regulatory compliance review</li>
-                            <li>Installation planning and logistics</li>
-                        </ul>
+                        <h3>Design and Prototyping</h3>
+                        <p class="phase-duration">Duration: 3-6 weeks</p>
+                        <p>This phase focuses on finalising the mechanical and electronic design of the buoy system. Tasks include CAD modeling of the buoy and encoder housing, selection of components such as the solar panels, microcontroller, and linear encoder, and fabrication of a small-scale prototype for initial testing. Software development begins here, with the first iteration of the firmware designed to capture, process, and log tidal data locally. Preliminary tests in controlled conditions validate sensor accuracy and power performance before field adaptation.</p>
                     </div>
 
                     <div class="glass-card phase-card">
                         <div class="phase-number">2</div>
-                        <h3>Hardware Installation</h3>
-                        <p class="phase-duration">Duration: 1-2 weeks</p>
-                        <ul class="phase-tasks">
-                            <li>Sensor array deployment</li>
-                            <li>Power system installation</li>
-                            <li>Communication equipment setup</li>
-                            <li>Initial system testing</li>
-                        </ul>
+                        <h3>Field Testing and Refinement</h3>
+                        <p class="phase-duration">Duration: 6 weeks</p>
+                        <p>
+                            The prototype is deployed in a test environment that replicates Saibai Island’s conditions. This phase focuses on assessing durability, buoyancy stability, solar charging efficiency, and LoRa signal reliability over distance. Data is collected over multiple tidal cycles to verify measurement precision and sensor response. Identified issues, such as waterproofing, calibration errors, or signal loss, are addressed through hardware and firmware refinements. Collaboration with environmental and community advisors ensures the design aligns with ecological and cultural expectations.
+                        </p>
                     </div>
 
                     <div class="glass-card phase-card">
                         <div class="phase-number">3</div>
-                        <h3>Software Configuration</h3>
-                        <p class="phase-duration">Duration: 1 week</p>
-                        <ul class="phase-tasks">
-                            <li>Sensor calibration and validation</li>
-                            <li>Cloud platform configuration</li>
-                            <li>Dashboard setup and customization</li>
-                            <li>Alert system configuration</li>
-                        </ul>
+                        <h3>Deployment and Integration</h3>
+                        <p class="phase-duration">Duration: 16-18 weeks</p>
+                        <p>
+                            Following successful testing, the final buoy units are manufactured and installed at designated coastal monitoring points around Saibai Island. The artificial reef foundations are anchored and verified for stability. Each buoy is configured and connected to the local LoRa gateway, which transmits data to a cloud-based server accessible to the Bureau of Meteorology and local authorities. Integration with monitoring dashboards and alert systems is completed, and data pipelines are tested for consistency and security.
+                        </p>
                     </div>
 
                     <div class="glass-card phase-card">
                         <div class="phase-number">4</div>
-                        <h3>Testing & Validation</h3>
-                        <p class="phase-duration">Duration: 2-4 weeks</p>
-                        <ul class="phase-tasks">
-                            <li>Accuracy validation against reference data</li>
-                            <li>Long-term stability testing</li>
-                            <li>Performance optimization</li>
-                            <li>User training and documentation</li>
-                        </ul>
-                    </div>
+                        <h3>Training and Maintenance Handover</h3>
+                        <p class="phase-duration">Duration: 8-12 weeks</p>
+                        <p>In the final phase, training sessions are conducted for local operators and council representatives covering system monitoring, maintenance procedures, and basic troubleshooting. Documentation and maintenance schedules are delivered, ensuring long-term sustainability. The project concludes with a full performance evaluation, comparing measured outcomes against design objectives. Any remaining issues are resolved before the formal handover of operational responsibility to the Saibai Island Council and the Bureau of Meteorology.</p>
                 </div>
             </div>
         </section>
 
-        <section class="maintenance-plan" id="maintenance-plan">
-            <div class="container">
-                <h2 class="section-title">Maintenance Plan</h2>
-                <div class="qa-grid">
-                    <div class="glass-card">
-                        <h3>Testing Protocols</h3>
-                        <p>Comprehensive testing ensures system reliability and accuracy under various conditions.</p>
-                        <ul class="qa-list">
-                            <li>Laboratory calibration and validation</li>
-                            <li>Field testing in multiple environments</li>
-                            <li>Long-term stability monitoring</li>
-                            <li>Performance benchmarking</li>
-                        </ul>
-                    </div>
-
-                    <div class="glass-card">
-                        <h3>Data Validation</h3>
-                        <p>Multi-level validation ensures data quality and reliability for end users.</p>
-                        <ul class="qa-list">
-                            <li>Real-time anomaly detection</li>
-                            <li>Cross-sensor validation</li>
-                            <li>Historical data comparison</li>
-                            <li>Automated quality flags</li>
-                        </ul>
-                    </div>
-
-                    <div class="glass-card">
-                        <h3>Documentation</h3>
-                        <p>Comprehensive documentation supports installation, operation, and maintenance.</p>
-                        <ul class="qa-list">
-                            <li>Installation and operation manuals</li>
-                            <li>API documentation and examples</li>
-                            <li>Maintenance procedures and schedules</li>
-                            <li>Training materials and videos</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section class="local-upskill-plan" id="local-upskill-plan">
             <div class="container">
@@ -257,7 +190,7 @@
                     <div class="glass-card">
                         <h3>Artifical Reef Perimit Application and Duration</h3>
                         <p>
-                            The application process for a Sea Dumping Permit is complex, involving multiple rounds of interviews and reviews undertaken by the DCCEEW. The process takes around 12 months to finalize since it involves a comprehensive environmental assessment, engagement with all relevant government ministries and key stakeholders, and the submission of detailed installation and maintenance plans along with a $10,000 application fee. After approval, the license lasts for 30 to 50 years, hence ensuring long-term environmental protection and control throughout the operational lifespan of the reef. In preparation for the interviews, the Artificial Reef guidelines recommend that we consider all stages of the life cycle of the artificial reef, including preparation and deployment (installation), maintenance, repairs and inspection, remediation and rectification work in the event of environmental harm. Additionally, the project must also have provisions for costs associated with having to keep necessary insurances and decommissioning plans in place once the reef comes to the end of its life.
+                            The application process for a Sea Dumping Permit is complex, involving multiple rounds of interviews and reviews undertaken by the DCCEEW. The process takes around 12 months to finalise since it involves a comprehensive environmental assessment, engagement with all relevant government ministries and key stakeholders, and the submission of detailed installation and maintenance plans along with a $10,000 application fee. After approval, the license lasts for 30 to 50 years, hence ensuring long-term environmental protection and control throughout the operational lifespan of the reef. In preparation for the interviews, the Artificial Reef guidelines recommend that we consider all stages of the life cycle of the artificial reef, including preparation and deployment (installation), maintenance, repairs and inspection, remediation and rectification work in the event of environmental harm. Additionally, the project must also have provisions for costs associated with having to keep necessary insurances and decommissioning plans in place once the reef comes to the end of its life.
                         </p>
                     </div>
                 </div>
