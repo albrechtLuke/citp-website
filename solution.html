@@ -49,14 +49,75 @@
     <main class="main-content">
         <section class="hero">
             <div class="hero-content">
-                <h1 class="hero-title">Our Innovative Solution</h1>
-                <p class="hero-subtitle">Advanced technology meets practical design for reliable tide monitoring</p>
+                <h1 class="hero-title">Project Solution</h1>
+            </div>
+        </section>
+
+
+        <section id="design-criteria" class="design-criteria">
+            <div class="container">
+                <h2 class="section-title">Design Criteria</h2>
+                <div class="cards-grid-3">
+                    <div class="glass-card">
+
+                        <h3>Reliable</h3>
+                        <p>
+                            The proposed system must be able to operate consistently under harsh weather conditions and other challenges such as power outages. Accurate, real-time and relevant data should also be consistently communicated via the system, ensuring that communities are able to depend on it during emergencies.
+                        </p>
+                        <br>
+                        <p>
+                            The system should be redundant and capable of storing and backing up data locally.
+
+                        </p>
+                    </div>
+                    <div class="glass-card">
+
+                        <h3>Culturally Appropriate</h3>
+                        <p>
+                            The proposed solution must respect Saibai Island and Torres Strait cultural values, beliefs and community practices, ensuring that the system assists and compliments, rather than interferes with their traditional way of living.
+                        </p>
+                        <br>
+                        <p>
+                            Integrates with their current lifestyle and maintains their traditional way of living.
+                        </p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Durable</h3>
+                        <p>
+                            The system should be able to withstand all environments and weather conditions, especially saltwater corrosion, humidity, strong winds and strong currents. Maintenance should also be as minimal as possible whilst maintaining long-term reliability and functionality. 
+                        </p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Resuable / Scalable</h3>
+                        <p>
+                            The proposed solution should be easily integrated with the current systems in place. The design of the solution should allow for expansion and replication for similar remote regions. The components and software should be modular and adaptable to, making upgrades and expansions simple over the long run. 
+                        </p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Accessible</h3>
+                        <p>
+                            The proposed solution must have easy access for regular maintenance and data from the system should be readily available to the community.
+                        </p>
+                        <br>
+                        <p>
+                            It must be easy to access and maintain with minimal technical expertise.
+                        </p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Cost Effective</h3>
+                        <p>
+                            [placeholder]<br>
+                            Saibai and other Torres Strait Island residents will receive these early warning broadcasts on radio receivers, specifically battery powered radios in the case of power outage. We aim to make residents aware of the improved redundancy and efficiency of the new early warning pathway provided by the Missing Link, which should motivate some residents to monitor their radios, especially during outages.
+                            <br>[/placeholder]
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="solution-overview" id="overview">
             <div class="container">
-                <h2 class="section-title">Solution - Overview</h2>
+                <h2 class="section-title">Overview</h2>
                 
                 <div class="solution-overview-grid">
                     <div class="image-wrapper">
@@ -73,7 +134,7 @@
                         </p>
                         <br>
                         <p>
-                            The buoys have a spherical shape with a float around it to provide extra buoyancy. They are fluorescent yellow and made of closed-cell polyethylene foam which are a lightweight, UV resistant and saltwater resistant material. The buoys are anchored to an artificial reef made of concrete bricks via studless steel chains attached to a cast iron weight.
+                            Data is transmitted from transceivers on the buoy to receivers on the island’s shore and relayed to the community via Long Range Wide Area Network (LoRaWAN). LoRa is a wireless radio technology that allows low cost, long range, low power communication between systems.  It is based on chirp spread spectrum modulation which encodes information on radio waves using chirp pulses similar to bats and dolphins. 
                         </p>
                         <br>
                         <p>
@@ -86,7 +147,7 @@
 
         <section class="solution-buoy" id="buoy">
         <div class="container">
-            <h2 class="section-title">Solution - Buoy</h2>
+            <h2 class="section-title">Buoy</h2>
 
             <div class="solution-overview-grid large-left">
                 <div class="image-wrapper-sticky">
@@ -139,7 +200,7 @@
 
     <section class="solution-mechanism" id="mechanism">
         <div class="container">
-            <h2 class="section-title">Solution - Mechanism</h2>
+            <h2 class="section-title">Mechanism</h2>
 
                 <div class="solution-overview-grid large-left">
             <div class="image-wrapper-sticky">
@@ -151,7 +212,7 @@
                     <h3>Chain</h3>
                     <br>
                     <p>
-                        A studless stainless steel mooring chain anchors the buoy assembly to the weight. The chain provides the primary load path, tolerates abrasion on a sedimentary seabed and keeps the buoy straight above the artificial reef and linear encoder mechanism. We specify marine-grade 316 or galvanised chain with corrosion-resistant coatings and sacrificial components where needed. The chain also acts as the interface for the linear encoder mechanism to measure the height of the bouy, therefore indicating the height of the tide.
+                        A studless stainless steel mooring chain anchors the buoy assembly to the weight. The chain provides the primary load path, tolerates abrasion on a sedimentary seabed and keeps the buoy straight above the artificial reef and linear encoder mechanism. We specify marine-grade 316 or galvanised chain with corrosion-resistant coatings and sacrificial components where needed. The chain also acts as the interface for the linear encoder mechanism to measure the height of the buoy, therefore indicating the height of the tide.
                     </p>
                 </div>
 
@@ -165,8 +226,15 @@
 
             </div>
 
+            <div class="small-card">
+                <h3>Gear</h3>
+                <br>
+                <p>
+                    A compact gear system couples the chain to the rotary encoder, converting the linear movements of the buoy moving up and down into rotary motion that can be measured by the rotary encoder. This has a measured reduction ratio so small tidal movements yield high-resolution measurements. Gears are housed in a sealed, grease-filled canister to exclude salt and biofouling and are made from corrosion-resistant materials such as 316 stainless steel or bronze. The gearbox protects the encoder from shock and surge loads and is serviced when lubricant condition or gear wear is detected.
+                </p>
+            </div>
             
-            <div class="solution-medium-grid"></div>
+            <div class="solution-medium-grid">
                 <div class="small-card">
                     <h3>Twisted Pair Cable</h3>
                     <br>
@@ -182,19 +250,13 @@
                         The steel platform is the submerged mounting frame that secures the mechanism enclosure to the artificial reef. Constructed from marine-grade coated steel or 316 stainless components, the platform distributes loads and provides service access during retrieval. Protective coatings, cathodic protection and periodic inspection extend service life.
                     </p>
                 </div>
-
+            </div>
                 
             
 
             
 
-            <div class="small-card">
-                <h3>Gear</h3>
-                <br>
-                <p>
-                    A compact gear system couples the chain to the rotary encoder, converting the linear movements of the buoy moving up and down into rotary motion that can be measured by the rotary encoder. This has a measured reduction ratio so small tidal movements yield high-resolution measurements. Gears are housed in a sealed, grease-filled canister to exclude salt and biofouling and are made from corrosion-resistant materials such as 316 stainless steel or bronze. The gearbox protects the encoder from shock and surge loads and is serviced when lubricant condition or gear wear is detected.
-                </p>
-            </div>
+            
 
         </div>
     </div>
@@ -202,7 +264,7 @@
 
 </section>
 
-   <section class="solution-buoy" id="buoy">
+   <section class="solution-buoy" id="artificial-reef">
         <div class="container">
             <h2 class="section-title">Artifical Reef</h2>
 
@@ -264,7 +326,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+   <footer class="footer">
         <div class="container">
             <table class="footer-table">
                 <tr>
@@ -285,7 +347,7 @@
                 </tr>
                 <tr>
                     <td><a href="index.html#design-overview">Design Overview</a></td>
-                    <td><a href="problem.html#issues">Issues</a></td>
+                    <td><a href="problem.html#issues">Broader Issues</a></td>
                     <td><a href="solution.html#buoy">Buoy</a></td>
                     <td><a href="implementation.html#implementation-phases">Implementation Phases</a></td>
                     <td><a href="impact.html#cultural-relevance">Cultural Relevance</a></td>
@@ -293,7 +355,7 @@
                 </tr>
                 <tr>
                     <td><a href="index.html#key-considerations">Key Considerations</a></td>
-                    <td><a href="problem.html#impact-of-problems">Impact of These Problems</a></td>
+                    <td></td>
                     <td><a href="solution.html#mechanism">Mechanism</a></td>
                     <td><a href="implementation.html#maintenance-plan">Maintenance Plan</a></td>
                     <td><a href="impact.html#upskill-opportunities">Upskill Opportunities</a></td>
