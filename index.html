@@ -64,18 +64,9 @@
             <div class="container">
                 <h2 class="section-title">Proposal Summary</h2>
                 <div class="glass-card">
+                    
                     <p class="proposal-text">
-                        This section contains what challenge the project aims to achieve and a brief description of the design. <br>
-                        It should be around 2-4 sentences. <br>
-                        For example: ‘The project aims to address [whatever the issue is] through [how success is achieved]’ <br><br>
-                    </p>
-                    <p class="proposal-text">
-                        [placeholder]
-                        The primary pathways by which early warnings propagate from the Bureau of Meteorology (BOM) to Saibai residents utilise the internet and manual communication chains. 
-                        These pathways have limited redundancy in case of power or telecom outage on Saibai, and limited efficiency in the case of disruptions to the manual communication chain. 
-                        The Missing Link addresses both of these issues by creating an automatic direct link between the BOM and a radio station in the Torres Strait. By using battery powered radios, 
-                        Saibai residents can receive early warning broadcasts which bypass any issues with manual communication chains, and which are resistant to power or telecom outages.
-                        [/placeholder]
+                        The project aims to address the lack of reliable tidal monitoring and early warning systems on Saibai Island by developing a locally operated, self-sustaining tide monitoring solution. The proposed system consists of solar-powered buoys equipped with linear encoder mechanisms to measure sea level changes and transmit data via a long-range LoRaWAN network. This design provides real-time, accurate tide information to both the Saibai Island community and the Bureau of Meteorology, enabling faster emergency response and improved preparedness during extreme weather events. The system’s modular and low-maintenance nature ensures scalability for other remote island communities facing similar environmental risks.
                     </p>
                 </div>
             </div>
@@ -84,41 +75,22 @@
         <section id="design-overview" class="design-overview">
             <div class="container">
                 <h2 class="section-title">Design Overview</h2>
-                <div class="cards-grid">
-                    <div class="glass-card">
-
-                        <h3>IoT Sensors</h3>
-                        <p>
-                            [placeholder]<br>
-                            The Missing Link achieves improved efficiency and redundancy of Saibai’s early warning system by immediately transmitting any warnings on the TSIMA 4MW radio broadcast as soon as they are released by the BOM.
-                            <br>[/placeholder]
-                        </p>
-                    </div>
-                    <div class="glass-card">
-
-                        <h3>Implementation</h3>
-                        <p>
-                            [placeholder]<br>
-                            The implementation of the design is supported by the BOM’s Registered Users FTP Service, which allows the Missing Link device to receive and broadcast a warning instantaneously when made by the BOM.
-                            <br>[/placeholder]
-                        </p>
-                    </div>
-                    <div class="glass-card">
-                        <h3>Components</h3>
-                        <p>
-                            [placeholder]<br>
-                            The proposal requires a single physical component: a microcomputer, specifically a Raspberry Pi, which will be installed in the TSIMA 4MW radio station studio. This device, the Missing Link, will need a wired connection to the internet and a wired connection to the radio studio’s audio mixing console. The Missing Link will run firmware that pulls alerts from the BOM alert feed, converts the alert’s text to spoken word, and outputs that audio to the mixing console, overriding the current radio broadcast.
-                            <br>[/placeholder]
-                        </p>
-                    </div>
-                    <div class="glass-card">
-                        <h3>Users</h3>
-                        <p>
-                            [placeholder]<br>
-                            Saibai and other Torres Strait Island residents will receive these early warning broadcasts on radio receivers, specifically battery powered radios in the case of power outage. We aim to make residents aware of the improved redundancy and efficiency of the new early warning pathway provided by the Missing Link, which should motivate some residents to monitor their radios, especially during outages.
-                            <br>[/placeholder]
-                        </p>
-                    </div>
+                <div class="glass-card">
+                    <p class="proposal-text">
+                        The tide monitoring buoys measure the height of the tide using a linear encoder mechanism, linked to the shore via the long-range communication standard, LoRaWAN, in order to monitor and deliver accurate data about the height of the tides. 
+                    </p>
+                    <br>
+                    <p class="proposal-text">
+                        The implementation of the design is supported through [FINISH]
+                    </p>
+                    <br>
+                    <p class="proposal-text">
+                        The design includes the following physical components: polyethylene foam body, top mark, indicator light, cast iron deadweight, studless stainless steel chain, shielded twisted pair cable, polycrystalline solar panels, lithium-ion battery, stainless steel tube, stainless steel platform, gears, rotary encoder, esp32, LoRa transceiver.
+                    </p>
+                    <br>
+                    <p class="proposal-text">
+                        Data from these buoys will be directly transmitted to the Saibai Island community and relevant authorities, such as the Bureau of Meteorology, to ensure warnings are distributed through accessible community channels if tide levels approach hazardous levels. This is important due to the island’s remote location, limited infrastructure, low elevation and constricted tidal channels which can cause tide heights to vary dramatically over short distances.
+                    </p>
                 </div>
             </div>
         </section>
@@ -126,54 +98,54 @@
         <section id="key-considerations" class="key-considerations">
             <div class="container">
                 <h2 class="section-title">Key Considerations</h2>
-                <div class="considerations-grid">
+                <div class="considerations-grid" style="max-width: 70%; align-items: center;" >
                     <div class="glass-card">
                         <h3>Environmental Factors</h3>
-                        <p style="text-align: left;">[placeholder]</p>
+
                         <ul>
                             <li>
-                                Whether the government is willing to cover some or all of the cost of implementation. 
+                                Built from marine-grade stainless steel and polyethylene foam for corrosion resistance and buoyancy
                             </li>
                             <li>
-                                English comprehension of Saibai residents, since translation is out of scope.
+                                Solar-powered system reduces emissions and maintenance while ensuring continuous operation
                             </li>
                             <li>
-                                The need for maintenance and updates in the case that the BOM feed or early warning requirements change.
+                                Artificial reef base enhances marine biodiversity and respects culturally significant areas
                             </li>
                         </ul>
-                        <p style="text-align: left;">[/placeholder]</p>
+
                     </div>
                     <div class="glass-card">
                         <h3>Technical Requirements</h3>
-                        <p style="text-align: left;">[placeholder]</p>
+
                         <ul>
                             <li>
-                                Whether the BOM will provide discounted or free access to their Registered Users system.
+                                Uses rotary encoder, ESP32, and LoRaWAN for accurate, low-power tide data transmission
                             </li>
                             <li>
-                                Prevalence of battery powered radio use by Saibai residents.
+                                Solar and battery setup ensures long-term operation with minimal maintenance
                             </li>
                             <li>
-                                Low power consumption
+                                Watertight housing, redundancy, and remote diagnostics maintain reliability and accuracy
                             </li>
                         </ul>
-                        <p style="text-align: left;">[/placeholder]</p>
+
                     </div>
                     <div class="glass-card">
                         <h3>Legislative Challenges</h3>
-                        <p style="text-align: left;">[placeholder]</p>
+
                         <ul>
                             <li>
-                                Any issues government bodies or local communities may have with the system addition.
+                               Watertight housing, redundancy, and remote diagnostics maintain reliability and accuracy
                             </li>
                             <li>
-                                Secure data transmission
+                                Requires approval and consultation with Torres Strait Regional Authority and Saibai Council
                             </li>
                             <li>
-                                Historical data analysis
+                                Ensures data security through encryption and meets visibility and safety regulations
                             </li>
                         </ul>
-                        <p style="text-align: left;">[/placeholder]</p>
+
                     </div>
                 </div>
             </div>
@@ -184,25 +156,25 @@
                 <h2 class="section-title">Proposed Materials & Cost Summary</h2>
                 <div class="materials-grid">
                     <div class="glass-card">
-                        <h3>Hardware Components</h3>
+                        <h3> Components</h3>
                         <div class="cost-item">
-                            <span>Pressure Sensors (3 units)</span>
-                            <span>$1,200</span>
+                            <span>High-density polyethylene (HDPE)</span>
+                            <span>$450</span>
                         </div>
                         <div class="cost-item">
-                            <span>Ultrasonic Sensors (2 units)</span>
-                            <span>$800</span>
+                            <span>Rotary Encoder</span>
+                            <span>$180</span>
                         </div>
                         <div class="cost-item">
-                            <span>Microcontroller & Connectivity</span>
-                            <span>$500</span>
+                            <span>ESP32 Microcontroller</span>
+                            <span>$70</span>
                         </div>
                         <div class="cost-item">
-                            <span>Power System (Solar + Battery)</span>
-                            <span>$1,000</span>
+                            <span>10W polycrystalline solar panel</span>
+                            <span>$120</span>
                         </div>
                         <div class="cost-item">
-                            <span>Enclosure & Mounting</span>
+                            <span>Artificial reef foundation</span>
                             <span>$300</span>
                         </div>
                     </div>
@@ -227,8 +199,8 @@
                     </div>
                     <div class="glass-card total-card">
                         <h3>Total Project Cost</h3>
-                        <div class="total-cost">$7,100</div>
-                        <p class="cost-note">One-time setup cost with minimal annual maintenance</p>
+                        <div class="total-cost">$1 520</div>
+                        <p class="cost-note">Total Estimated Cost (per buoy unit)</p>
                     </div>
                 </div>
             </div>
