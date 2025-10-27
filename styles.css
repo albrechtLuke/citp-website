@@ -722,6 +722,12 @@ section {
     height: 100%;
     gap: 20px;
 }
+.solution-medium-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    gap: 20px;
+}
 
 .small-card {
     background: rgba(255, 255, 255, 0.2);
@@ -1592,24 +1598,24 @@ section {
     }
 }
 /* MARK:- Acknowledgement popup */
-.acknowledgement-popup {
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-    max-width: 20rem;
-    width: calc(100% - 20rem);
-    padding: 1.5rem;
-    border-radius: 2rem;
-    z-index: 2000;
-    font-size: 0.95rem;
-    color: #1f2a10;
-    background: rgba(142, 156, 120, 0.1);
-    border: 1px solid rgba(142, 156, 120, 0.3);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    opacity: 1;
-    transition: opacity 0.4s ease;
-}
+    .acknowledgement-popup {
+        position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        max-width: 20rem;
+        width: calc(100% - 20rem);
+        padding: 1.5rem;
+        border-radius: 2rem;
+        z-index: 2000;
+        font-size: 0.95rem;
+        color: #1f2a10;
+        background: rgba(142, 156, 120, 0.1);
+        border: 1px solid rgba(142, 156, 120, 0.3);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        opacity: 1;
+        transition: opacity 0.4s ease;
+    }
 
 .acknowledgement-popup.fade-out {
     opacity: 0;

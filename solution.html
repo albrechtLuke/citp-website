@@ -59,10 +59,11 @@
                 <h2 class="section-title">Solution - Overview</h2>
                 
                 <div class="solution-overview-grid">
-
-                    <img src="images/diagram-blank.png" alt="Tide Monitoring System Diagram" class="solution-image">
-
-                    <div class="glass-card">
+                    <div class="image-wrapper">
+                        <img src="images/diagram-blank.png" alt="Tide Monitoring System Diagram" class="solution-image">
+                        <img src="images/saibai-map.png" alt="Saibai Island Map" class="solution-image">
+                    </div>
+                    <div class="glass-card image-wrapper-sticky" style="height: min-content;">
                         <p>
                             The island’s lack of tidal monitoring systems and backup infrastructure makes it extremely vulnerable during emergencies. Our solution to these issues is a tide monitoring buoy which will measure the rising sea levels and act as the first point of contact to the island in emergencies. This allows the community to be notified even when cut off from the mainland. The buoys are part of a larger early warning system which will monitor, predict and warn the community about hazardous events. 
                         </p>
@@ -140,39 +141,64 @@
         <div class="container">
             <h2 class="section-title">Solution - Mechanism</h2>
 
-            <div class="solution-overview-grid large-left">
-                <div class="solution-image-box">
-                    <img src="images/diagram-mechanism.png" alt="Mechanism Diagram" class="solution-image">
-                </div>
+                <div class="solution-overview-grid large-left">
+        <div class="image-wrapper-sticky">
+            <img src="images/diagram-mechanism.png" alt="Mechanism Diagram" class="solution-image">
+        </div>
 
-                <div class="solution-small-grid">
-                    <div class="small-card">
-                        <h3>Chain</h3> <br>
-                        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                    </div>
-                    <div class="small-card">
-                        <h3>Twisted Pair Cable</h3> <br>
-                        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                    </div>
-                    <div class="small-card">
-                        <h3>Gear</h3> <br>
-                        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                    </div>
-                    <div class="small-card">
-                        <h3>Rotary Encoder</h3> <br>
-                        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                    </div>
-                    <div class="small-card">
-                        <h3>Entry Point</h3> <br>
-                        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                    </div>
-                    <div class="small-card">
-                        <h3>Steel Platform</h3> <br>
-                        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                    </div>
-
-                </div>
+        <div class="solution-medium-grid">
+            <div class="small-card">
+                <h3>Chain</h3>
+                <br>
+                <p>
+                    A studless stainless steel mooring chain anchors the buoy assembly to the reef anchor or deadweight. The chain provides the primary load path, tolerates abrasion on a sedimentary seabed and keeps the buoy within its deployment footprint while allowing vertical motion. We specify marine-grade 316 or galvanised chain with corrosion-resistant coatings and sacrificial components where needed. Inspect for wear and corrosion during routine maintenance every 6–12 months.
+                </p>
             </div>
+
+            <div class="small-card">
+                <h3>Twisted Pair Cable</h3>
+                <br>
+                <p>
+                    A shielded, underwater-rated twisted pair carries encoder signals and low-voltage power between the submerged reel/encoder and the buoy's electronics. The cable is routed through a watertight gland and abrasion-resistant fairlead and may be armoured or run inside a protective tube where abrasion risk is high. Use gel-filled or polypropylene-jacketed marine cable to prevent water ingress. Replace or repair any damaged sections detected during scheduled checks.
+                </p>
+            </div>
+
+            <div class="small-card">
+                <h3>Gear</h3>
+                <br>
+                <p>
+                    A compact gear train couples the reel drum to the rotary encoder, providing a measured reduction ratio so small tidal movements yield high-resolution counts. Gears are housed in a sealed, grease-filled canister to exclude salt and biofouling and are made from corrosion-resistant materials such as 316 stainless steel or bronze. The gearbox protects the encoder from shock and surge loads and is serviced when lubricant condition or gear wear is detected.
+                </p>
+            </div>
+
+            <div class="small-card">
+                <h3>Rotary Encoder</h3>
+                <br>
+                <p>
+                    The rotary encoder records reel rotation to translate line movement into precise tidal height data. A magnetic, marine-grade encoder with IP68 sealing is preferred for reliability in salty, wet environments. Encoder pulses are read by the onboard microcontroller to compute water level changes; periodic calibration against a known reference ensures ongoing accuracy. Expected operational life is multiple years, subject to protection from mechanical shock and ingress.
+                </p>
+            </div>
+
+            <div class="small-card">
+                <h3>Entry Point</h3>
+                <br>
+                <p>
+                    The entry point is the watertight interface where the mooring line and signal/power cable pass through the buoy hull. It uses a marine cable gland and swivel to prevent cable twist, plus a low-friction fairlead to minimise wear on the line. All penetrations are sealed with redundant o-rings and potting where appropriate to preserve internal electronics. These seals are inspected and replaced on scheduled maintenance.
+                </p>
+            </div>
+
+            <div class="small-card">
+                <h3>Steel Platform</h3>
+                <br>
+                <p>
+                    The steel platform is the submerged mounting frame that secures the reel, weight, and mooring attachment to the artificial reef or deadweight anchor. Constructed from marine-grade coated steel or 316 stainless components, the platform distributes loads and provides service access during retrieval. Protective coatings, cathodic protection and periodic inspection extend service life; expect 10–20 years depending on environment and maintenance.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
         </div>
     </section>
 
