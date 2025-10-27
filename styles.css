@@ -39,6 +39,16 @@ body {
 }
 
 
+.center-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .image-wrapper {
     position: relative;
     display: inline-block;
